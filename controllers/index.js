@@ -9,7 +9,7 @@ const homeRoutes = require('./home-routes.js');
 
 router.use('/api', apiRoutes);
 router.use('/api/posts', postRoutes);
-router.use('/comment', commentRoutes);
+router.use('/api/comments', commentRoutes);
 router.use('/', homeRoutes);
 
 router.use((req, res) => {
