@@ -5,7 +5,9 @@ const postRoutes = require('./api/post-routes');
 const commentRoutes = require('./api/comment-routes');
 
 const homeRoutes = require('./home-routes.js');
+const dashboardRoutes = require('./dashboard-routes.js');
 
+router.use('/dashboard', dashboardRoutes);
 
 router.use('/api', apiRoutes);
 router.use('/api/posts', postRoutes);
